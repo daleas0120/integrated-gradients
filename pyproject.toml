@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "integrated-gradients"
+version = "0.1.0"
+description = "Interpret Gaussian Process Models by using Integrated Gradients"
+authors = [
+    { name = "bbbccc88", email = "https://github.com/bbbccc88"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "scipy",
+    "matplotlib",
+    "torch",
+    "gpytorch",
+    "tqdm",
+    "dill",
+    "pandas",
+    "seaborn",
+    "ipywidgets",
+    "numpyro",
+    "jupyterlab",
+    "scikit-learn",
+    "pyyaml",
+    "watermark"
+]
+
+[project.optional-dependencies]
+develop = [
+    "pytest",
+    "black",
+    "flake8"
+]
+
+[tool.setuptools]
+packages = ["."]
