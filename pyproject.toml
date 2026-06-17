@@ -7,7 +7,7 @@ name = "integrated-gradients"
 version = "0.1.0"
 description = "Interpret Gaussian Process Models by using Integrated Gradients"
 authors = [
-    { name = "bbbccc88", email = "https://github.com/bbbccc88"}
+    { name = "bbbccc88" }
 ]
 readme = "README.md"
 requires-python = ">=3.11"
