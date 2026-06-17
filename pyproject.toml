@@ -14,21 +14,23 @@ requires-python = ">=3.11"
 dependencies = [
     "scipy",
     "matplotlib",
-    "torch",
+    "torch>=2.7.0",
     "gpytorch",
     "tqdm",
     "dill",
     "pandas",
     "seaborn",
-    "ipywidgets",
     "numpyro",
-    "jupyterlab",
     "scikit-learn",
-    "pyyaml",
-    "watermark"
+    "pyyaml"
 ]
 
 [project.optional-dependencies]
+notebook = [
+    "ipywidgets",
+    "jupyterlab",
+    "watermark"
+]
 develop = [
     "pytest",
     "black",
@@ -36,4 +38,7 @@ develop = [
 ]
 
 [tool.setuptools]
-packages = ["."]
+py-modules = ["integrated_gradients", "utils"]
+
+[tool.setuptools.package-dir]
+"" = "src"
